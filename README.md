@@ -1,5 +1,8 @@
 # ROS 2 Tasks – Publisher/Subscriber and TurtleSim Square
-!(figure_3.png)
+<img width="865" height="390" alt="figure_3" src="https://github.com/user-attachments/assets/c78bf98f-ad4d-4ac3-a38c-579e25445ab7" />
+<img width="865" height="804" alt="figure_5" src="https://github.com/user-attachments/assets/a2167f03-7607-41eb-b8f5-01cdfa938a59" />
+<img width="865" height="663" alt="figure_4" src="https://github.com/user-attachments/assets/ce27f9b8-0adb-4f5e-ae05-11970a25f4c6" />
+
 ## Overview
 
 This project contains two ROS 2 tasks implemented and tested on Ubuntu using ROS 2 Humble.
