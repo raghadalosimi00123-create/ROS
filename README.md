@@ -20,21 +20,7 @@ A Python ROS 2 node controls the TurtleSim turtle and makes it move in a square 
 
 ---
 
-# 1. Environment
 
-The project was implemented using the following environment:
-
-- Operating System: Ubuntu
-- ROS 2 Distribution: ROS 2 Humble
-- ROS 2 Workspace: `~/ros2_ws`
-- Source Directory: `~/ros2_ws/src`
-
-The project contains two ROS 2 packages:
-
-    ros2_publisher_subscriber
-    turtlesim_square
-
----
 
 # 2. Task 1 – Publisher and Subscriber
 
@@ -52,18 +38,7 @@ The Subscriber receives the message and displays:
 
 ---
 
-## 2.1 Publisher and Subscriber Package
 
-The package name is:
-
-    ros2_publisher_subscriber
-
-The package contains two Python nodes:
-
-    publisher.py
-    subscriber.py
-
----
 
 ## 2.2 Build the Package
 
@@ -81,46 +56,10 @@ After the build is completed successfully, source the workspace:
 
 ---
 
-## 2.3 Run the Publisher
 
-Open a terminal and run:
-
-    source ~/ros2_ws/install/setup.bash
-    ros2 run ros2_publisher_subscriber publisher
-
-The Publisher continuously sends:
-
-    Publishing: "Good morning"
-
-### Publisher Result
-
-The Publisher successfully sends the required `Good morning` message.
-
-![Publisher sending Good morning](images/figure_1.png)
 
 ---
 
-## 2.4 Run the Subscriber
-
-Keep the Publisher running and open a second terminal.
-
-Source the workspace:
-
-    source ~/ros2_ws/install/setup.bash
-
-Run the Subscriber:
-
-    ros2 run ros2_publisher_subscriber subscriber
-
-The Subscriber receives the message and displays:
-
-    I heard: "Good morning"
-
-### Subscriber Result
-
-The Subscriber successfully receives the message.
-
-![Subscriber receiving Good morning](images/figure_2.png)
 
 ---
 
@@ -159,15 +98,7 @@ The Subscriber receives:
     | Successful Communication |
     +---------------------------+
 
-### Combined Result
 
-The following screenshot shows both the Publisher and Subscriber running simultaneously.
-
-![Publisher and Subscriber working together](images/figure_3.png)
-
-This confirms that the ROS 2 Publisher and Subscriber are communicating successfully.
-
----
 
 # 3. Task 2 – TurtleSim Square
 
@@ -187,21 +118,6 @@ Move to the ROS 2 source directory:
 
     cd ~/ros2_ws/src
 
-Create the package:
-
-    ros2 pkg create --build-type ament_python turtlesim_square
-
-The package structure is:
-
-    turtlesim_square/
-    ├── package.xml
-    ├── setup.py
-    ├── setup.cfg
-    ├── resource/
-    ├── test/
-    └── turtlesim_square/
-        ├── __init__.py
-        └── square.py
 
 ---
 
@@ -342,7 +258,7 @@ After completing all four sides, the program displays:
 
 The TurtleSim program successfully controls the turtle and makes it move according to the programmed square movement.
 
-![TurtleSim movement](images/figure_4.png)
+
 
 The turtle moves forward and changes its direction according to the programmed movement.
 
@@ -360,33 +276,6 @@ This confirms that the TurtleSim square task was completed successfully.
 
 ---
 
-# 11. Final Project Structure
-
-The final project contains the following ROS 2 packages:
-
-    ros2_ws/
-    └── src/
-        │
-        ├── ros2_publisher_subscriber/
-        │   ├── package.xml
-        │   ├── setup.py
-        │   ├── setup.cfg
-        │   │
-        │   └── ros2_publisher_subscriber/
-        │       ├── __init__.py
-        │       ├── publisher.py
-        │       └── subscriber.py
-        │
-        └── turtlesim_square/
-            ├── package.xml
-            ├── setup.py
-            ├── setup.cfg
-            │
-            └── turtlesim_square/
-                ├── __init__.py
-                └── square.py
-
----
 
 # 12. Verification
 
