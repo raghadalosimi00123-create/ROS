@@ -1,5 +1,5 @@
 # ROS 2 Tasks – Publisher/Subscriber and TurtleSim Square
-
+!(figure_3.png)
 ## Overview
 
 This project contains two ROS 2 tasks implemented and tested on Ubuntu using ROS 2 Humble.
@@ -266,7 +266,7 @@ The turtle moves forward and changes its direction according to the programmed m
 
 The final result shows the turtle completing the four sides of the square.
 
-![Completed TurtleSim square](images/figure_5.png)
+
 
 The terminal also confirms:
 
